@@ -23,3 +23,10 @@ _mid + 1_.
 
 ### _target_ no está en la estructura
 En caso de que no se encuentre _target_ se hace un _return -1_.
+
+## Obtener _mid_
+Hay varias fórmulas matemáticas para calcular _mid_, la mas utilizada es: 
+__(_left_ + _right_)/2__. Sin embargo, con valores muy grandes, se puede producir un overflow (ver valores posibles de
+___int___). <br>
+La fórmula que siempre funciona y no produce overflow es: <br>
+* __left__ +((__right__ - __left__)/2)
